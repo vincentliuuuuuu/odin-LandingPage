@@ -20,8 +20,16 @@ a {
 }
 
 h1 {
+  color: white;
   font-size: 20px;
   font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 46px;
+  margin-top: 0px;
+  margin-bottom: -20px;
 }
 
 button {
@@ -29,21 +37,46 @@ button {
   border-radius: 6px;
   text-decoration: none;
   border-style: none;
-  padding: 8px 30px;
+  padding: 8px 0;
   color: white;
+  width: 40%;
 }
 
-.color-container {
-  background-color: #2d2d2a;
+button:hover {
+  cursor: pointer;
+  background-color: rgb(72, 72, 250);
 }
 
-.header {
+nav {
   display: flex;
   justify-content: space-between;
-  padding: 0px 200px;
   color: white;
   align-items: center;
   margin-bottom: 30px;
+  width: 100%;
+}
+
+header {
+  background-color: #2d2d2a;
+  padding: 0px 250px;
+  padding-bottom: 100px;
+}
+
+section {
+  padding-bottom: 100px;
+}
+
+.quote {
+  background-color: lightgray;
+  font-size: x-large;
+  font-weight: normal;
+  padding: 2em 20em;
+  padding-bottom: 0;
+}
+
+h5 {
+  font-weight: normal;
+  text-align: right;
 }
 
 .header-extension {
@@ -54,21 +87,105 @@ button {
   margin-bottom: 60px;
 }
 
+.header-image {
+  width: 30vw;
+  height: auto;
+}
+
 .content {
   display: flex;
-  flex: 1;
-  padding: 20px 200px;
+  flex: 1 0 auto;
+  flex-direction: column;
 }
 
-.image {
-  width: 500px;
-  height: 250px;
-  margin-left: 100px;
-  background-color: red;
+.info-h1 {
+  color: black;
+  text-align: center;
+  font-size:xx-large;
 }
 
-.heading {
-  font-weight: 800;
-  font-size: 46px;
-  margin-bottom: -20px;
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+.right-side {
+  display: flex;
+  width: 50vw;
+  margin: 3em 2em 3em 5em;
+}
+
+.img-caption {
+  display: flex;
+  flex-direction: column;
+  max-width: 200px;
+  width: 20vw;
+}
+
+.caption {
+  margin: 0;
+  padding: 0;
+  font-size: medium;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: darkgray;
+  padding: 2em 0;
+}
+
+@media (max-width: 1100px) {
+  .img-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    width: 40vw;
+  }
+
+  .images {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    gap: 0.5vw;
+  }
+  
+  .right-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3em 0;
+  }
+
+  .header-image {
+    width: 50vw;
+    height: auto;
+  }
+
+  .header-extension {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
